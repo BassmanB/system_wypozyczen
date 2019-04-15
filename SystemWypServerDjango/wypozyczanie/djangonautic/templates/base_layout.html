@@ -1,0 +1,18 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Produkty</title>
+	<link rel="stylescheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+	<div class="wrapper">
+		<h1><a href="{% url 'products:list' %}"><img src="{% static 'assets/rent.jpg' %}"/></a></h1>
+		{% block content %}
+		{% endblock %}
+	</div>
+	
+</body>
+</html>
